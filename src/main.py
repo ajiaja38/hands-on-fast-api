@@ -16,6 +16,6 @@ async def http_exception_handler(request: Request, exc: HTTPException):
 
 @apps.get("/", response_model=ResponseEntity[str])
 async def root():
-    return ResponseEntity(code=200, status="OK", message="Hello World from FastAPI")
+    return ResponseEntity(code=200, status="OK", message="Hello from FastAPI with Python")
   
 apps.include_router(router)
